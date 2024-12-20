@@ -8,7 +8,7 @@ def calculadora():
         "\nSelecione o número da operação desejada: \n\n1 - Soma\n2 - Subtração\n3 - Multiplicação\n4 - Divisão"
     )
 
-    opcao = input("Digite sua opção (1/2/3/4): ")
+    opcao = input("\nDigite sua opção (1/2/3/4): ")
 
     if opcao == "1":
         num1 = int(input("Digite o primeiro número: "))
@@ -30,6 +30,8 @@ def calculadora():
         num2 = int(input("Digite o segundo número: "))
         resultado = num1 / num2
         print(f"A divisão de {num1} / {num2} = {resultado}")
+    else:
+        print("Opção invalida.")
 
 
 calculadora()
